@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const fontSize = 50; // 设置字体大小为32px
       const lineHeight = fontSize + 10; // 设置行高为字体大小加10px
 
-      ctx.fillStyle = "black";
+      ctx.fillStyle = "white";
       ctx.font = `${fontSize}px Arial`;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
