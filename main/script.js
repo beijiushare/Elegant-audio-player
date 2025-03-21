@@ -390,7 +390,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 维持画布活动
   function animate() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
     ctx.fillRect(0, 0, 1, 1);
     requestAnimationFrame(animate);
   }
