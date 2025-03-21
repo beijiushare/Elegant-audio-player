@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const fontSize = 50; // 设置字体大小为32px
       const lineHeight = fontSize + 10; // 设置行高为字体大小加10px
 
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "black";
       ctx.font = `${fontSize}px Arial`;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
@@ -390,7 +390,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 维持画布活动
   function animate() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
     ctx.fillRect(0, 0, 1, 1);
     requestAnimationFrame(animate);
   }
