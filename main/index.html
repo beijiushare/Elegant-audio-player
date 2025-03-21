@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beijiu的音频播放器</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <h2>Beijiu的音频播放器</h2>
+
+      <div class="file-selection">
+        <div class="file-names">
+          <span class="file-name" id="media-file-name">未选择音频文件</span>
+          <span class="file-name" id="subtitle-file-name">未选择字幕文件</span>
+          <span class="file-name" id="background-file-name"
+            >未选择背景图片</span
+          >
+        </div>
+
+        <div class="file-buttons">
+          <button class="file-button" id="media-file-btn" title="选择音频文件">
+            <span class="icon media"></span>
+          </button>
+          <button
+            class="file-button"
+            id="subtitle-file-btn"
+            title="选择字幕文件"
+          >
+            <span class="icon subtitle"></span>
+          </button>
+          <button
+            class="file-button"
+            id="background-file-btn"
+            title="选择背景图片"
+          >
+            <span class="icon background"></span>
+          </button>
+          <button class="file-button" id="pip-toggle-btn" title="打开画中画">
+            <span class="icon pip"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <button id="play" title="开始播放">
+          <span class="icon play"></span>
+        </button>
+        <button id="pause" title="暂停播放">
+          <span class="icon pause"></span>
+        </button>
+      </div>
+
+      <div class="progress-container">
+        <div class="time-display">
+          <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+          <input type="range" id="seek-bar" min="0" max="100" value="0" />
+        </div>
+      </div>
+
+      <div class="subtitle-container" id="subtitle-container"></div>
+    </div>
+
+    <input
+      type="file"
+      id="media-file"
+      accept=".mp3,.wav,.ogg,.mp4"
+      style="display: none"
+    />
+    <input
+      type="file"
+      id="subtitle-file"
+      accept=".vtt,.srt"
+      style="display: none"
+    />
+    <input
+      type="file"
+      id="background-file"
+      accept="image/*"
+      style="display: none"
+    />
+
+    <canvas id="video-canvas" style="display: none"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
