@@ -150,8 +150,8 @@ h2 {
 
 .subtitle-container {
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
   display: flex;
   align-items: center;
   justify-content: center;
